@@ -22,7 +22,7 @@ public class Triangle {
 
     public void display()
     {
-        System.out.printf("a = %f; b = %f", first, second);
+        System.out.printf("a = %f; b = %f; area = %f\n", first, second, areaTriangle());
     }
 
     public void read()

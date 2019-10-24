@@ -20,6 +20,20 @@ public class Main
 
     public static void main(String[] args)
     {
+        Triangle Cat = new Triangle();
+        Cat.init(5, 7);
 
+        Triangle Dog = new Triangle();
+        Dog.read();
+
+        System.out.print("Cat: ");
+        Cat.display();
+        System.out.print("Dog: ");
+        Dog.display();
+
+        System.out.printf("Cat a = %f\n", Cat.getFirst());
+        System.out.printf("Dog b = %f\n", Dog.getSecond());
+
+        System.out.printf("area Cat = %f\n", Cat.areaTriangle());
     }
 }
