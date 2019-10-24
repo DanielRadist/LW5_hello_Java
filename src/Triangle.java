@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
 public class Triangle {
-    private float first;        //катет a
-    private float second;       //катет b
 
     public void init(float a, float b)
     {
@@ -42,4 +40,7 @@ public class Triangle {
     {
         return first * second / 2;
     }
+
+    private float first;        //катет a
+    private float second;       //катет b
 }

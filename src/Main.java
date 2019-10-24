@@ -20,6 +20,7 @@ public class Main
 
     public static void main(String[] args)
     {
+        /*demo #1
         Triangle Cat = new Triangle();
         Cat.init(5, 7);
 
@@ -34,6 +35,9 @@ public class Main
         System.out.printf("Cat a = %f\n", Cat.getFirst());
         System.out.printf("Dog b = %f\n", Dog.getSecond());
 
-        System.out.printf("area Cat = %f\n", Cat.areaTriangle());
+        System.out.printf("area Cat = %f\n", Cat.areaTriangle());*/
+
+        /*demo #*/
+
     }
 }
