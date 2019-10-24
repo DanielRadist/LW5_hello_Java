@@ -37,7 +37,19 @@ public class Main
 
         System.out.printf("area Cat = %f\n", Cat.areaTriangle());*/
 
-        /*demo #*/
+        /*demo #2*/
+        ArrayTriangle triangles = new ArrayTriangle();
+        triangles.abc[0].init(3, 4);
+        triangles.abc[1].init(5, 6);
+
+        triangles.init(50);
+        System.out.print(triangles.compare());
+
+        System.out.printf("\n");
+
+        triangles.init(10);
+        System.out.print(triangles.compare());
+
 
     }
 }
