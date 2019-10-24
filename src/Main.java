@@ -1,4 +1,4 @@
-
+import java.lang.Math;
 
 public class Main
 {
@@ -37,7 +37,7 @@ public class Main
 
         System.out.printf("area Cat = %f\n", Cat.areaTriangle());*/
 
-        /*demo #2*/
+        /*demo #2
         ArrayTriangle triangles = new ArrayTriangle();
         triangles.abc[0].init(3, 4);
         triangles.abc[1].init(5, 6);
@@ -48,8 +48,43 @@ public class Main
         System.out.printf("\n");
 
         triangles.init(10);
-        System.out.print(triangles.compare());
+        System.out.print(triangles.compare());*/
 
+        /*demo #3*/
+        final int N = 5;
+        Triangle[] triangles = new Triangle[N];
+        for(int i = 0; i < N; i++)
+            triangles[i] = new Triangle();
+
+        //inits() and displays()
+        for(int i = 0; i < N; i++)
+        {
+            float a = 1 + (float)(Math.random() * 10);
+            float b = 1 + (float)(Math.random() * 10);
+            triangles[i].init(a, b);
+            triangles[i].display();
+        }
+
+        float[] resAreaTriangles;
+        resAreaTriangles = new float[N];
+
+        //areaTriangles()
+        for(int i = 0; i < N; i++)
+        {
+            resAreaTriangles[i] = triangles[i].areaTriangle();
+        }
+        //вывод
+        for(int i = 0; i < N; i++)
+        {
+            System.out.printf("#%d: area = %f\n", i + 1, resAreaTriangles[i]);
+        }
+        float max = resAreaTriangles[0];
+        for(int i = 1; i < N; i++)
+        {
+            if(max < resAreaTriangles[i])
+                max = resAreaTriangles[i];
+        }
+        System.out.printf("Max = %f", max);
 
     }
 }

@@ -20,6 +20,6 @@ public class ArrayTriangle
     }
 
     private float c;           //некое "С" O_o
-    public Triangle abc[] = new Triangle[2];
+    public Triangle[] abc = new Triangle[2];
 
 }
