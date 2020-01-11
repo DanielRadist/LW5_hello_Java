@@ -20,9 +20,28 @@ public class Main
 
     public static void main(String[] args)
     {
-        /*demo #1
-        Triangle Cat = new Triangle();
-        Cat.init(5, 7);
+        /*demo from lw10*/
+        //lw10 static
+        Triangle.setFirst(10);
+        System.out.printf("Triangle a = %f\n", Triangle.getFirst());
+
+        final int N = 5;
+        Triangle[] triangles = new Triangle[N];
+        for(int i = 0; i < N; i++)
+            if(i % 2 == 0)
+                triangles[i] = new Triangle();
+            else
+                triangles[i] = new Triangle(0);
+
+        for(int i = 0; i < N; i++)
+        {
+            System.out.printf("#%d: first = %f, second = %f\n", i + 1, triangles[i].getFirst(), triangles[i].getSecond());
+        }
+
+
+
+        /*demo #1*/
+        Triangle Cat = new Triangle(7);
 
         Triangle Dog = new Triangle();
         Dog.read();
@@ -35,7 +54,7 @@ public class Main
         System.out.printf("Cat a = %f\n", Cat.getFirst());
         System.out.printf("Dog b = %f\n", Dog.getSecond());
 
-        System.out.printf("area Cat = %f\n", Cat.areaTriangle());*/
+        System.out.printf("area Cat = %f\n", Cat.areaTriangle());
 
         /*demo #2
         ArrayTriangle triangles = new ArrayTriangle();
@@ -48,9 +67,9 @@ public class Main
         System.out.printf("\n");
 
         triangles.init(10);
-        System.out.print(triangles.compare());*/
+        System.out.print(triangles.compare());
 
-        /*demo #3*/
+        /*demo #3
         final int N = 5;
         Triangle[] triangles = new Triangle[N];
         for(int i = 0; i < N; i++)
@@ -85,6 +104,6 @@ public class Main
                 max = resAreaTriangles[i];
         }
         System.out.printf("Max = %f", max);
-
+        */
     }
 }
