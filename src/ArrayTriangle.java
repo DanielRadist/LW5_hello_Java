@@ -1,5 +1,5 @@
 public class ArrayTriangle
-{
+{/*
     ArrayTriangle()
     {
         abc[0] = new Triangle();
@@ -8,7 +8,7 @@ public class ArrayTriangle
 
     public boolean compare()
     {
-        if(abc[0].areaTriangle() + abc[1].areaTriangle() < c)
+        if(abc[0].area() + abc[1].area() < c)
             return true;
         else
             return false;
@@ -21,5 +21,5 @@ public class ArrayTriangle
 
     private float c;           //некое "С" O_o
     public Triangle[] abc = new Triangle[2];
-
+*/
 }

@@ -20,8 +20,13 @@ public class Main
 
     public static void main(String[] args)
     {
+        //LW12
+        Pyramid a = new Pyramid(2, 5, 7);
+        a.display();
+
         /*demo from lw10*/
         //lw10 static
+        /*
         Triangle.setFirst(10);
         System.out.printf("Triangle a = %f\n", Triangle.getFirst());
 
@@ -36,11 +41,12 @@ public class Main
         for(int i = 0; i < N; i++)
         {
             System.out.printf("#%d: first = %f, second = %f\n", i + 1, triangles[i].getFirst(), triangles[i].getSecond());
-        }
+        }*/
 
 
 
         /*demo #1*/
+        /*
         Triangle Cat = new Triangle(7);
 
         Triangle Dog = new Triangle();
@@ -55,6 +61,7 @@ public class Main
         System.out.printf("Dog b = %f\n", Dog.getSecond());
 
         System.out.printf("area Cat = %f\n", Cat.areaTriangle());
+        */
 
         /*demo #2
         ArrayTriangle triangles = new ArrayTriangle();

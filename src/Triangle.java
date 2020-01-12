@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Triangle {
 
 
+    /*
     Triangle(float b) {
         if(b <= 0)
             try {
@@ -12,10 +13,11 @@ public class Triangle {
                 b = 1;
             }
         second = b;
-    }
+    }*/
 
-    Triangle() {
-        second = 1;
+    Triangle(float a, float b) {
+        this.first = a;
+        this.second = b;
     }
 
     public void init(float a, float b) {
@@ -35,11 +37,11 @@ public class Triangle {
         init(a, b);
     }
 
-    static public void setFirst(int value) {
+    public void setFirst(int value) {
         first = value;
     }
 
-    static public float getFirst()
+    public float getFirst()
     {
         return first;
     }
@@ -51,14 +53,14 @@ public class Triangle {
 
     public void display()
     {
-        System.out.printf("a = %f; b = %f; area = %f\n", first, second, areaTriangle());
+        System.out.printf("a = %f; b = %f; area = %f\n", first, second, area());
     }
 
-    public float areaTriangle()
+    public float area()
     {
          return first * second / 2;
     }
 
-    private static float first;         //катет a
-    private float second;               //катет b
+    protected float first;              //катет a
+    protected float second;             //катет b
 }
