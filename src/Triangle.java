@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Triangle {
+public class Triangle implements Cloneable {
 
 
     /*
@@ -61,6 +61,10 @@ public class Triangle {
         System.out.printf("a = %f; b = %f \n", first, second);
     }
 
+    public Triangle clone() throws CloneNotSupportedException{
+
+        return (Triangle) super.clone();
+    }
 
 
     protected float first;              //катет a

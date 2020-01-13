@@ -27,4 +27,9 @@ public class Pyramid extends Triangle {
     public float area() {
         return (super.area() * z / 3);
     }
+
+    public Pyramid clone() throws CloneNotSupportedException{
+
+        return (Pyramid) super.clone();
+    }
 }

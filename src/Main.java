@@ -27,8 +27,22 @@ public class Main
 
         */
         //LW13
+        /*
         PyramidAndTriangle a = new PyramidAndTriangle(2, 3, 4, 5, 6);
-        a.display();
+        a.display();*/
+
+        //LW14
+        System.out.printf("\n \n");
+        try {
+            Pyramid c = new Pyramid(2,3, 4);
+            Pyramid d = c.clone();
+            c.display();
+            d.display();
+        } catch (CloneNotSupportedException ex)
+        {
+
+        }
+
 
         /*demo from lw10*/
         //lw10 static
