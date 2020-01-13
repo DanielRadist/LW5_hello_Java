@@ -51,15 +51,17 @@ public class Triangle {
         return second;
     }
 
-    public void display()
-    {
-        System.out.printf("a = %f; b = %f; area = %f\n", first, second, area());
-    }
-
     public float area()
     {
-         return first * second / 2;
+        return first * second / 2;
     }
+
+    public void display()
+    {
+        System.out.printf("a = %f; b = %f \n", first, second);
+    }
+
+
 
     protected float first;              //катет a
     protected float second;             //катет b

@@ -21,7 +21,13 @@ public class Main
     public static void main(String[] args)
     {
         //LW12
+        /*
         Pyramid a = new Pyramid(2, 5, 7);
+        a.display();
+
+        */
+        //LW13
+        PyramidAndTriangle a = new PyramidAndTriangle(2, 3, 4, 5, 6);
         a.display();
 
         /*demo from lw10*/

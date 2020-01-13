@@ -1,5 +1,5 @@
 public class Pyramid extends Triangle {
-    private float z;          //высота
+    protected float z;          //высота
 
     Pyramid(float a, float b, float z)
     {
@@ -18,7 +18,9 @@ public class Pyramid extends Triangle {
     @Override
     public void display() {
         super.display();
-        System.out.printf("z = %f", z);
+        System.out.printf("z = %f\n", z);
+        System.out.printf("areaS = %f\n", super.area());
+        System.out.printf("areaV = %f\n", area());
     }
 
     @Override
